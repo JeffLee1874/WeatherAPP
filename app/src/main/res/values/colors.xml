@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_grey">#DDFFF9CF</color>
+    <color name="bgyin">#a6ad9d</color>
+    <color name="bgqingyun">#415172</color>
+    <color name="bgyu">#3c3c3c</color>
+    <color name="bgxuewu">#b0b0b0</color>
+    <color name="bgleishachen">#5b4c3e</color>
+    <color name="transparent">#00000000</color>
+</resources>

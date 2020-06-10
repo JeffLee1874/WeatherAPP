@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/xingxing"/>
+    <ImageButton
+        android:id="@+id/back2"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/selectcitycard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/back2"
+        android:layout_toRightOf="@id/back2"
+        android:text="   Select"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:outlineAmbientShadowColor="#5A4E4E"
+        app:srcCompat="@drawable/add4" />
+
+    <ImageView
+        android:id="@+id/dividerline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="3dp"
+        app:srcCompat="@drawable/dividerline" />
+
+    <ListView
+        android:id="@+id/citycardlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="90dp"/>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:text="CopyRight@JEFFLEE_resource_TQAPI"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+</RelativeLayout>

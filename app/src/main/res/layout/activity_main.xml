@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgyu"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:layout_marginBottom="3dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif"
+            android:scaleType="matrix"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/location_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/place" />
+
+        <TextView
+            android:id="@+id/update_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:text="update_time: "
+            android:textColor="#EFEFEF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/location_img"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-3dp"
+            android:layout_toRightOf="@id/location_img"
+            android:text="顺德区"
+            android:textColor="#FFFFFF"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/temperature_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginBottom="60dp"
+            android:text="25℃"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/lowest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/weather_now"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/weather_now"
+            android:text="19℃"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/seperator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/lowest"
+            android:layout_toRightOf="@id/lowest"
+            android:text="/"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/highest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/seperator"
+            android:layout_toRightOf="@id/seperator"
+            android:text="30℃"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/weather_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginBottom="35dp"
+            android:text="cloudy"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/location_img"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="17dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/list" />
+
+        <ImageView
+            android:id="@+id/weather_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@id/temperature_now"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_launcher_foreground" />
+    </RelativeLayout>
+
+        <com.example.weather.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.PagerTabStrip
+                android:id="@+id/pagertab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:background="@color/transparent">
+
+            </androidx.viewpager.widget.PagerTabStrip>
+
+    </com.example.weather.NoScrollViewPager>
+
+</LinearLayout>

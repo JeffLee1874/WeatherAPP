@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="win_speed">\n\n风力等级</string>
+    <string name="win">\n风向</string>
+    <string name="win_meter">\n风速</string>
+    <string name="humidity">\n湿度</string>
+
+    <string name="visibility">\n\n能见度</string>
+    <string name="pressure">\n气压hPa</string>
+    <string name="air">\n空气质量&amp;质量等级</string>
+    <string name="air_tips">\n空气质量描述</string>
+
+</resources>
